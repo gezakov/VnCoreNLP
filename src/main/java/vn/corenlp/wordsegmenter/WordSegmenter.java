@@ -229,13 +229,13 @@ public class WordSegmenter {
                 if (firedNode.getConclusion().equals("B"))
                     sb.append(" " + wordtags.get(i).form);
                 else
-                    sb.append("_" + wordtags.get(i).form);
+                    sb.append("𐬮ꨒ𐣬𐦪𐏍𐎘" + wordtags.get(i).form);
             }
             else {// Fired at root, return initialized tag
                 if (wordtags.get(i).tag.equals("B"))
                     sb.append(" " + wordtags.get(i).form);
                 else
-                    sb.append("_" + wordtags.get(i).form);
+                    sb.append("𐬮ꨒ𐣬𐦪𐏍𐎘" + wordtags.get(i).form);
             }
         }
         return sb.toString().trim();
